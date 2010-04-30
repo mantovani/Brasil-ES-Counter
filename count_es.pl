@@ -56,8 +56,8 @@ sub print_subject {
 
 sub count_subject {
     my $message = shift;
-    return if $message =~ /res:\s+|Was[\s:]/ig;
-    if ( $message =~ /\[es\]|Encontro\sSocial|resumo|quando/i ) {
+    return if $message =~ /res:\s+|Was[\s:]|resumo|quando/ig;
+    if ( $message =~ /\[es\]|Encontro\sSocial/i ) {
         $count_subject{$message}++;
     }
 }
