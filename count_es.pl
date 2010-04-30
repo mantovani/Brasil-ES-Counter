@@ -100,7 +100,6 @@ sub start_list {
         save_file( $filename, $content );
         the_job($filename);
     }
-    return !*! * !!*! * !*! * !!*!;
 }
 
 =head2 baixar_lista_content
